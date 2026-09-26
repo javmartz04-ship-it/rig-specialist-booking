@@ -19,8 +19,7 @@
    JetBrains Mono. Montserrat = RIG wordmark only.
    CALENDAR: live GHL widget WN7G7PK6zbHErLWdc3yL (link.realinsurancecrm.com).
    Full width so GHL uses its 3-column layout; whole date grid in the fold at 1440x900.
-   PHOTO: every .ph is a PLACEHOLDER. Swap for
-   <img src="assets/christopher.jpg" alt="Christopher, GoHighLevel specialist">.
+   PHOTO: assets/christopher.jpg (1122x1402 studio headshot) + christopher-avatar.jpg (face crop).
    ===================================================================== */
 :root{
   --paper:#ffffff;
@@ -115,7 +114,7 @@ h1 .l{display:block}
 .ph{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 16%,#f3f7fd 0%,#e1e9f5 55%,#cfdbee 100%)}
 .ph svg{position:absolute;left:50%;bottom:0;width:78%;transform:translateX(-50%);color:rgba(11,85,217,.16)}
 .av{display:block;position:relative;border-radius:50%;overflow:hidden;flex:none;box-shadow:0 0 0 1px rgba(24,139,246,.4)}
-.av .ph svg{width:94%}
+.av img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- meet Christopher ---------- */
 .meet{padding:clamp(72px,9vw,120px) 0;border-top:1px solid var(--line)}
@@ -124,7 +123,7 @@ h1 .l{display:block}
   background:linear-gradient(180deg,rgba(236,243,255,.9),rgba(246,249,255,.7)) padding-box,linear-gradient(150deg,rgba(47,123,255,.55),rgba(31,166,255,.16) 50%,rgba(47,123,255,.4)) border-box;
   border:1px solid transparent;box-shadow:0 50px 100px -30px rgba(11,60,140,.3),0 10px 30px -12px rgba(11,40,90,.12)}
 .portrait{position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .portrait::after{content:"";position:absolute;inset:auto 0 0 0;height:50%;background:linear-gradient(rgba(6,14,32,0),rgba(6,14,32,.78));pointer-events:none}
 .ph__tag{position:absolute;right:14px;top:14px;z-index:2;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.75);border:1px solid var(--line);font-family:var(--font-m);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3)}
 .plate{position:absolute;left:22px;right:22px;bottom:20px;z-index:2;color:#fff}
@@ -264,7 +263,7 @@ h1 .l{display:block}
 
       <section class="hero" aria-labelledby="h1">
         <div class="host rise r1">
-          <span class="av"><span class="ph"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#person"/></svg></span></span>
+          <span class="av"><img src="assets/christopher-avatar.jpg" alt="" width="240" height="240"></span>
           <b>Christopher <svg viewBox="0 0 24 24" aria-label="Verified"><use href="#seal"/></svg></b>
           <i class="sep" aria-hidden="true"></i>
           <span class="role">GoHighLevel Specialist</span>
@@ -298,9 +297,7 @@ h1 .l{display:block}
         <div class="meet__grid">
           <div class="frame rv">
             <div class="portrait">
-              <!-- PLACEHOLDER: swap for Christopher's headshot -->
-              <span class="ph"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#person"/></svg></span>
-              <span class="ph__tag">Headshot placeholder</span>
+              <img src="assets/christopher.jpg" alt="Christopher, GoHighLevel specialist at Real Insurance Group" width="1122" height="1402" loading="lazy">
               <div class="plate">
                 <strong>Christopher <svg viewBox="0 0 24 24" aria-label="Verified"><use href="#seal"/></svg></strong>
                 <span>GoHighLevel Specialist</span>
@@ -346,7 +343,7 @@ h1 .l{display:block}
     <section class="close" aria-labelledby="close-h">
       <div class="wrap">
         <div class="band rv">
-          <span class="av"><span class="ph"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#person"/></svg></span></span>
+          <span class="av"><img src="assets/christopher-avatar.jpg" alt="" width="240" height="240"></span>
           <h2 id="close-h">Christopher has <span class="script grad-txt">15 minutes</span> for you.</h2>
           <p>Pick any open time on the calendar. He'll take it from there.</p>
           <a class="btn" href="#cal">Pick Your Time
